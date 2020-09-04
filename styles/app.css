@@ -27,7 +27,7 @@ header {
   margin-bottom: 55px;
   margin: 2rem auto;
   width: 55rem;
-  height: 650px;
+  height: 700px;
   max-width: 90%;
   border: 1px solid #023d6d;
   border-radius: 10px;
@@ -113,4 +113,22 @@ header {
 
 .botones {
 margin:  auto;
+}
+
+#resultado, #resultado input{
+text-align: center;
+border-radius: 10px;
+padding: 1px;
+margin-top: 0rem;
+margin-bottom:0rem ;
+}
+
+
+#resultado{
+  font-size: 24px;
+margin-bottom: 0px;
+}
+#resultado h2 {
+  margin: 0px;
+  margin-top: 10px;
 }
