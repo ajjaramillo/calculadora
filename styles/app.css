@@ -21,7 +21,7 @@ header {
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   width: 100%;
-  box-shadow: 2px 8px 5px rgb(81, 255, 0);
+  box-shadow: 2px 8px 25px rgb(0, 183, 255);
 }
 
 
@@ -33,7 +33,8 @@ header {
   width: 55rem;
   height: 700px;
   max-width: 90%;
-  border: 1px solid #023d6d;
+  border: 3px solid #023d6d;
+  box-shadow: 14px 8px 71px #e9e9e9;
   border-radius: 10px;
   padding: 1rem;
   color: #020202;
@@ -43,6 +44,7 @@ header {
 #calculator h1 {
   font-size: 35px;
  padding-right: 35px;
+ border: #e9e9e9;
 }
 
 #cuerpo {
@@ -56,9 +58,11 @@ header {
 
 #tablero {
   margin: auto;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(34, 33, 33);
   width: 300px;
+  height: 120px;
   padding: 4px;
+  margin-bottom: -30px;
   border-radius: 15px;
 
 }
