@@ -64,10 +64,11 @@ header {
   width: 17rem;
   border-radius: 30px;
   padding: 0.15rem;
+  padding-right: 45px;
   margin: auto;
   display: block;
   color: #023d6d;
-  text-align: center;
+  text-align: right;
 }
 
 #calculator input:focus {
