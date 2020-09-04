@@ -9,8 +9,7 @@ html {
 body {
   margin: 0;
   background-color: gray;
-  background-attachment: fixed;
-  background-repeat: initial;
+  background-repeat: repeat repeat-x;
 }
 
 header {
