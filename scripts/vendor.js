@@ -7,7 +7,6 @@ let result = document.getElementById('result');
 let opeActual = '';
 let opeAnterior = '';
 let operacion = undefined;
-var capricho = [];
 
 
 botonNumeros.forEach(function(boton){
@@ -68,7 +67,7 @@ function calcular () {
 };
 
 function agregarNumero(num){
-  opeActual = opeActual.toString() + num.toString();
+  opeActual = "" + opeActual + num;
   actualizarDisplay();
   } 
   function clear() {
@@ -79,8 +78,8 @@ function agregarNumero(num){
 
 function actualizarDisplay(){
   result.value = opeActual;
-  historial.value =opeActual;
+  historial.value = opeActual;
 }
-;
+
 
 
