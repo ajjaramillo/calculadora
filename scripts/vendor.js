@@ -2,6 +2,7 @@ const botonNumeros = document.getElementsByName('data-numer');
 const botonOpera = document.getElementsByName('data-opera');
 const botonIgual = document.getElementsByName('data-igual') [0];
 const botonDelete = document.getElementsByName('data-delete')[0];
+const botonEspecial= document.getElementById('especial');
 const historial = document.getElementById('historial');
 let result = document.getElementById('result');
 let opeActual = '';
@@ -14,7 +15,13 @@ botonNumeros.forEach(function(boton){
       agregarNumero(boton.innerText);
   })
 });
+botonEspecial.addEventListener('click', function(){
+cerrar();
+});
 
+function cerrar (){
+  window.close();
+};
 botonOpera.forEach(function(boton){
   boton.addEventListener('click',function(){
       selectOperacion(boton.innerText)
@@ -29,6 +36,7 @@ botonDelete.addEventListener('click',function(){
   clear();
   actualizarDisplay();
 });
+
 
 function selectOperacion(op){
   if(opeActual == '') return;
@@ -71,9 +79,10 @@ function agregarNumero(num){
   actualizarDisplay();
   } 
   function clear() {
-    opeActual = '';
-    opeAnterior = '';
-    operacion = undefined;
+    
+     opeActual = '';
+     opeAnterior = '';
+     operacion = undefined;
   };
 
 function actualizarDisplay(){
