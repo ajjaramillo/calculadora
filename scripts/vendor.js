@@ -4,6 +4,7 @@ const botonIgual = document.getElementsByName('data-igual') [0];
 const botonDelete = document.getElementsByName('data-delete')[0];
 const botonEspecial= document.getElementById('especial');
 const historial = document.getElementById('historial');
+const seleccion = document.querySelectorAll('button');
 let result = document.getElementById('result');
 let opeActual = '';
 let opeAnterior = '';
@@ -88,7 +89,8 @@ function agregarNumero(num){
 function actualizarDisplay(){
   result.value = opeActual;
   historial.value = opeActual;
-}
+};
 
-
-
+ for (const sel of seleccion) {
+ sel.style.backgroundColor = 'red';
+};
