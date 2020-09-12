@@ -5,10 +5,12 @@ const botonDelete = document.getElementsByName('data-delete')[0];
 const botonEspecial= document.getElementById('especial');
 const historial = document.getElementById('historial');
 const seleccion = document.querySelectorAll('button');
+const btncientifica= document.getElementById('cientifica');
 let result = document.getElementById('result');
 let opeActual = '';
 let opeAnterior = '';
 let operacion = undefined;
+let esCientifica = false;
 
 
 botonNumeros.forEach(function(boton){
@@ -91,6 +93,33 @@ function actualizarDisplay(){
   historial.value = opeActual;
 };
 
- for (const sel of seleccion) {
- sel.style.backgroundColor = 'red';
-};
+//  for (const sel of seleccion) {
+//  sel.style.backgroundColor = 'red';
+// };
+
+// codigo de calculadora cientifica
+
+function calculadoracientifica(botones, botonpadre)
+{
+    if ( esCientifica === false){
+        let elemento = document.getElementById(botonpadre);
+          for(let i = 0; i< botones.length; i++) 
+          {
+            let boton = document.createElement('button'); 
+            boton.innerText = botones[i];
+            elemento.appendChild(boton);
+          }  
+      esCientifica = true;
+    }  
+}
+
+function cambiarCalculadoraCientifica()
+{
+  let botones = ['Pi','i','e'];
+  calculadoracientifica(botones,'botones1');
+
+  let botones2 = ['sen','cos','tan'];
+  calculadoracientifica(botones2, 'botones2');
+
+}
+btncientifica.addEventListener('click', cambiarCalculadoraCientifica);
