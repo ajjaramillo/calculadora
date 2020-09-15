@@ -23,9 +23,6 @@ header {
   width: 100%;
   box-shadow: 2px 8px 25px rgb(0, 183, 255);
 }
-
-
-
 #calculator {
   background-color: rgba(255, 255, 255, 0.123);
   margin-bottom: 55px;
@@ -45,29 +42,16 @@ header {
   font-size: 35px;
  padding-right: 35px;
  border: #e9e9e9;
-}
-
-#cuerpo {
+}#cuerpo {
   margin: auto;
   background-color: black;
   padding: 20px;
   width: 350px;
   height: 430px;
   border-radius: 35px;
+  align-items: center;
+  align-content: center;
 }
-
-#tablero {
-  margin: auto;
-  background-color: rgb(34, 33, 33);
-  width: 300px;
-  height: 120px;
-  padding: 4px;
-  margin-bottom: -30px;
-  border-radius: 15px;
-
-}
-
-
 #calculator input {
   font: inherit;
   height: 75px;
@@ -86,18 +70,6 @@ header {
 #calculator input:focus {
   outline: none;
 }
-
-#calculator button {
-  margin-top: 10px;
-  font: inherit;
-  background: #000;
-  color: white;
-  border: 1px solid #023d6d;
-  border-radius: 24px;
-  padding: 1rem;
-  cursor: pointer;
-}
-
 #calculator button:focus {
   outline: none;
 }
@@ -112,21 +84,11 @@ header {
   width: 4rem;
 }
 
-#calc-actions {
-  margin-top: 1rem;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-  border-radius: 35px;
-  margin:auto;
-  background-color: cadetblue;
-
-
+#botones1
+{
+  margin: auto;
 }
 
-#botones {
-margin:  auto;
-}
 
 #resultado, #resultado input{
 text-align: center;

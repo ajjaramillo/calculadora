@@ -6,6 +6,7 @@ const botonEspecial= document.getElementById('especial');
 const historial = document.getElementById('historial');
 const seleccion = document.querySelectorAll('button');
 const btncientifica= document.getElementById('cientifica');
+const eliminarNodo = document.getElementById('quitar-c');
 let result = document.getElementById('result');
 let opeActual = '';
 let opeAnterior = '';
@@ -123,3 +124,11 @@ function cambiarCalculadoraCientifica()
 
 }
 btncientifica.addEventListener('click', cambiarCalculadoraCientifica);
+
+function eliminarNodos()
+{
+    let texto = document.getElementById('parrafo');
+    texto.parentNode.removeChild('button');
+
+}
+eliminarNodo.onclick = () => eliminarNodos();
